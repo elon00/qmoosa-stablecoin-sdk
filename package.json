@@ -1,0 +1,28 @@
+{
+  "name": "@qmoosa/stablecoin-sdk",
+  "version": "1.0.0",
+  "description": "QMOOSA Stablecoin SDK — Type-Safe CDP Client, Vault Position Manager & Intent Signers",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "npm run build && node --test tests/sdk.test.mjs",
+    "lint": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@qmoosa/stablecoin-engine": "file:../qmoosa-stablecoin-engine",
+    "@types/node": "^20.12.7",
+    "typescript": "^5.4.5"
+  },
+  "keywords": [
+    "qmoosa",
+    "stablecoin",
+    "sdk",
+    "cdp",
+    "client",
+    "defi"
+  ],
+  "author": "elon00",
+  "license": "MIT"
+}
